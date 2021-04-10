@@ -1,9 +1,10 @@
 * {
   margin: 0;
   padding: 0;
-  background-color: green;
+  background-color: #0e7b4f;
   text-align: center;
   font-family: sans-serif;
+  color: white;
 }
 
 body {
@@ -13,19 +14,24 @@ body {
 }
 
 h1 {
-  color: coral;
   font-size: 5rem;
   padding-top: 20px;
   text-transform: uppercase;
+  font-family: serif;
 }
 
 p {
-  color: cornsilk;
   font-size: 2rem;
   text-align: center;
+  padding-bottom: 5px;
 }
 
 .display-flex {
+  transform: translateY(4px);
+  box-shadow: 0 5px #666;
+  border: 10px;
+  border-style: solid;
+  border-color: #095436;
   display: flex;
   gap: 20px;
   align-items: center;
@@ -33,7 +39,7 @@ p {
 }
 
 img {
-  width: 100%;
+  width: 150px;
 }
 
 .container-buttoms {
@@ -43,16 +49,16 @@ img {
 }
 
 .btn {
-  background-color: hotpink;
+  background-color: #063e28;
   padding: 10px;
   border-radius: 5px;
   margin-top: 20px;
 }
 .btn:hover {
-  background-color: rgb(228, 61, 145);
+  background-color: #095436;
 }
 .btn:active {
-  background-color: #3e8e41;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
+  background-color: #063e28;
+  box-shadow: 0 2px rgb(48, 48, 48);
+  transform: translateY(2px);
 }
