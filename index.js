@@ -1,6 +1,3 @@
-//Random dice number generator
-function rollTheDice(){
-
 // Player name
 var player1 = "Player 1";
 var player2 = "Player 2";
@@ -14,6 +11,9 @@ document.querySelector("p.Player1").innerHTML = player1;
 document.querySelector("p.Player2").innerHTML = player2;
 }
 
+
+//Random dice number generator
+function rollTheDice(){
 
     //timer
 setTimeout (function (){
@@ -29,16 +29,16 @@ document.querySelector(".img2").setAttribute("src",
 "img/dice" + randomNumber2 + ".png");
 
 if (randomNumber1 === randomNumber2){
-    document.querySelector("h1").innerHTML = "Draw!";
+    document.querySelector("h2").innerHTML = "Draw!";
 }
 
 else if (randomNumber1 < randomNumber2){
-    document.querySelector("h1").innerHTML = (player2 + " Wins!");
+    document.querySelector("h2").innerHTML = (player2 + " Wins!");
 }
 
 else {
-    document.querySelector("h1").innerHTML = (player1 + " Wins!");
+    document.querySelector("h2").innerHTML = (player1 + " Wins!");
 }
 
-}, 3000);
+}, 0);
 }
